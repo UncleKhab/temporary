@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option {
+  border: 1px solid gray;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.active-option {
+  animation: breathOut 2s ease-out;
+}
+
+@keyframes breathOut {
+  from {
+    background-color: rgb(125, 235, 255);
+  }
+  to {
+    background-color: white;
+  }
+}
